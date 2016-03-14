@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=640,user-scalable=no, minimum-scale=0.5,target-densitydpi=320" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection"content="telephone=no" />
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js" type="text/ecmascript"></script>
+<title><%=title%></title>
+</head>
+
+<body>
+<h1><%=title%></h1>
+<div class="warp" style="width:640px;height:1008px;overflow:hidden;">
+	<input id="name" type="text">
+	<a id="add" href="javascript:void(0);"><%=add%></a>
+	<a id="get" href="javascript:void(0);"><%=get%></a>
+</div>
+<div class="content">
+    <ul>
+
+    </ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#add").click(function(e){
+		var name = $("#name").val();
+		$.post("/Index/add", {"name":name}, function(rs){
+			console.log(typeof rs, rs);
+		},"json");
+	});
+
+    $("#get").click(function(e){
+		var name = $("#name").val();
+		$.post("/Index/get", {"name":name}, function(rs){
+			console.log(typeof rs, rs);
+		},"json");
+	});
+});
+</script>
+</body>
+</html>

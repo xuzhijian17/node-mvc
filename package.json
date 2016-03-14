@@ -1,0 +1,32 @@
+{
+  "name": "node-mvc",
+  "version": "1.0.0",
+  "description": "This is a node.js MVC framwork.",
+  "main": "./public/app.js",
+  "dependencies": {
+    "co": "^4.6.0",
+    "ejs": "^2.3.4",
+    "mongodb": "^2.1.0",
+    "mongoose": "^4.3.0",
+    "mongoskin": "^2.0.3",
+    "n": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xuzhijian17/node-mvc.git"
+  },
+  "keywords": [
+    "node",
+    "mvc"
+  ],
+  "author": "Jeson Xu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuzhijian17/node-mvc/issues"
+  },
+  "homepage": "https://github.com/xuzhijian17/node-mvc#readme"
+}

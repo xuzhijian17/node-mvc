@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+a,a:hover{ text-decoration:none;}
+*{font-family:'PingFang TC','FZLanTingHeiS-R-GB';}
+.warp { width:640px; margin:0 auto; padding-bottom:1px;}
+.appWarp { min-height:1008px; width:640px; margin:0 auto; position:relative;}
+.imgLine { display:block; margin:0;}
+.imgLine img { display:block; border:0;}
+
+.arrowDown {width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:12px solid #0066cc;}
+.arrowUp {width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:12px solid #0066cc;}
+
+/*Login Page*/
+.login { background:url(../images/bg.png) no-repeat center bottom;}
+.logo { background:url(../images/logo.png) no-repeat 0 0; background-size:cover; width:173px; height:173px; margin:105px auto 120px;}
+.loginForm { width:480px; margin:0 auto;}
+.itemLogin { background:#000; border-radius:5px;}
+.itemLogin div { opacity:1;}
+.loginInput { color:#FFF;}
+/*开户*/
+.stepWarp { height:138px; background:#f4f4f4; border-bottom:2px solid #dcdcdc; position:relative; margin-bottom:15px;}
+.stepLine { width:430px; position:absolute; top:48px; left:105px; z-index:0; height:1px; background:#a2aeca;}
+.step { width:530px; padding-top:20px; margin:0 auto; overflow:hidden; position:relative;}
+.stepCnt { position:relative;}
+.step ul li { float:left;}
+.step ul li.mid { margin:0 85px;}
+.step ul li span { display:block;}
+.yW { margin:0 auto 10px; width:46px; height:46px; border:1px solid #a2aeca; padding:2px; border-radius:50%; background:#f4f4f4;}
+.yN { width:46px; height:46px; line-height:46px; text-align:center; background:#a2aeca; border-radius:50%; color:#FFF;}
+.stepText { color:#a2aeca;}
+.curStep .yW { border:1px solid #2373d1;}
+.curStep .yN {background:#2373d1;}
+.curStep .stepText { color:#2373d1;}
+
+/*form*/
+.itemField { overflow:hidden; margin:0 20px 25px; overflow:hidden; display:table; width:600px;}
+.itemLable { vertical-align:middle; display:table-cell;white-space:nowrap;}
+.item,.items { width:415px; float:right;}
+.itemText,.itemSelect { width:410px; height:56px; border:2px solid #dae1ea; background:#f9faff;}
+.textInput,.textSelect { background:none; border:0; float:left; margin:5px 0 0 15px; width:380px; height:45px; color:#333333;}
+.textSelect { position:relative; z-index:99;}
+.uppercase {text-transform:uppercase}
+.itemSelect { position:relative;}
+.arrow-down {width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;border-top:12px solid #0066cc; position:absolute; top:22px; right:12px; z-index:9;}
+.itemCheckbox { overflow:hidden;}
+
+.butTag { height:80px; background:#2373d1; color:#FFF; text-align:center; line-height:80px; border-radius:5px; display:block; text-decoration:none;}
+
+/*指引图标*/
+.rArrow { display:block; position:relative;}
+.rArrow::before,.rArrow::after { content:""; border:13px solid transparent; border-left-color:#879097; position:absolute; top:33px; right:0; z-index:9; width:0; height:0;}
+.rArrow::after { right:3px; z-index:99; border-left-color:#FFF;}
+
+/*列表*/
+.blkList { background:#FFF; border:1px solid #e2e2e2; border-width:1px 0; margin-bottom:20px;}
+.linkList { display:block; padding:0 25px; line-height:85px;}
+.unLine { border-bottom:2px solid #eaeef4;}
+
+.stockList { padding-top:20px;}
+.stockT { overflow:hidden;}
+.stockT span { display:block; float:left;}
+.stockT .icoStye { width:30px; height:20px; background:#da5432; font-size:18px; line-height:18px; text-align:center; color:#FFF; margin-top:10px;}
+.stockT .stockName{ color:#2373d1; margin-left:10px;}
+.stockT .icoState { width:26px; height:26px; text-align:center; line-height:26px; font-size:24px; margin:9px 0 0 10px;}
+.buy { color:#f15150; border:1px solid #f15150; border-radius:5px;}
+.sell { color:#6faf50; border:1px solid #6faf50; border-radius:5px;}
+.stockT .stockDate { float:right; font-size:18px; margin:4px 25px 0 0;}
+
+.stockInfo {margin:0 25px; border-bottom:2px solid #d3dae1;}
+.stockInfo ul { margin:0 6px; overflow:hidden; }
+.stockInfo ul li { width:40%; font-size:26px; overflow:hidden; padding:20px 0; border-bottom:1px solid #dde4ed;}
+.infoOption { float:left; color:#999;}
+.infoValue { float:right; color:#333;}
+
+/*日期选择*/
+.dateBlock { padding:0px 0 20px 0; background:#f3f3f3; border-bottom:2px solid #e7e7e7;}
+.dateSelect { overflow:hidden; padding:35px 0 10px; background:#FFF;}
+.dateSelect ul { margin:0 40px; overflow:hidden;}
+.dateSelect ul li { float:left; color:#333; text-align:center; display:table;} 
+.sDate { width:146px;}
+.toDate { width:120px; line-height:80px;}
+.eDate { width:146px;}
+.dateButWarp { width:148px;}
+.dateSelect ul li span { display:block; margin:0 auto; text-align:center; font-size:26px;}
+.startDateT {}
+.dateInput { background:none; border:0; font-size:26px; width:100%; margin:10px 0 7px;}
+
+.dateBut { width:110px; height:50px; line-height:50px; float:right; display:block; margin-top:20px;}
+.arrowColB1 { border-bottom-color:#a2aeca;}
+
+.dw-i {font-size: 30px;width: 170px;text-align: center;}
+.mbsc-ios .dwb { font-size:30px;}
+
+
+
+
+/*弹窗*/
+/*popUp*/
+.popUp { background-color:rgba(0,0,0,0.8); width:100%; position:absolute; top:0; left:0; display:none; z-index:999999; }
+.popUpCnt { position:absolute;}
+.popUpCntTx { width:320px; height:60px; line-height:60px; text-align:center; font-size:36px; background:#FFF; border:3px solid #f06945; border-radius:5px;}
+
+/*show*/
+.popUpCntShow { width:640px; overflow:hidden; height:905px;}
